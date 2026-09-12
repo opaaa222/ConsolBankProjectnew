@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/BankProjectConsol/">
+    <Project Path="BankProject.Domain/BankProject.Domain.csproj" />
+    <Project Path="BankProject.Infrastructure/BankProject.Infrastructure.csproj" />
+    <Project Path="BankProject.Ui/BankProject.Ui.csproj" />
+    <Project Path="BankProjects.Service/BankProjects.Service.csproj" />
+  </Folder>
+</Solution>
