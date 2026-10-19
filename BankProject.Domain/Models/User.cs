@@ -2,8 +2,9 @@
 
 namespace BankProject.Domain.Models
 {
-    [JsonDerivedType(typeof(Client), typeDiscriminator: "Client")]
-    [JsonDerivedType(typeof(Admin), typeDiscriminator: "Admin")]
+    [JsonPolymorphic(TypeDiscriminatorPropertyName = "$type")]
+    [JsonDerivedType(typeof(Client), typeDiscriminator: "client")]
+    [JsonDerivedType(typeof(Admin), typeDiscriminator: "admin")]
     public abstract class User
     {
         public int Id { get; set; }

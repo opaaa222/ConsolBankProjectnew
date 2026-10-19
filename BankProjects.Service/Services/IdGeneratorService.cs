@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using BankProject.Domain.Models;
 
-namespace BankProjects.Service
+namespace BankProjects.Service.Services
 {
     public static class IdGeneratorService
     {

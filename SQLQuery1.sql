@@ -1,0 +1,1 @@
+﻿SELECT * FROM LoginEntries ORDER BY LoginTime DESC;

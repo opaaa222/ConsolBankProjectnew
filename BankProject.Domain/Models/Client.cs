@@ -9,14 +9,17 @@ namespace BankProject.Domain.Models
         public decimal Balance { get; set; }
         public string LoadStatus { get; set; }
         public decimal LoanAmount { get; set; }
+        public decimal Salary { get; set; }
+        public bool IsBlocked { get; set; }
 
-        public Client(int id, string userName, string password, string email, string role, decimal balance, string loadStatus, decimal loanAmount)
+        public Client(int id, string userName, string password, string email, string role, decimal balance, string loadStatus, decimal loanAmount, decimal salary = 0, bool isBlocked = false)
             : base(id, userName, password, email, role)
         {
             Balance = balance;
             LoadStatus = loadStatus;
             LoanAmount = loanAmount;
+            Salary = salary;
+            IsBlocked = isBlocked;
         }
-
     }
 }

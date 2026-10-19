@@ -6,12 +6,13 @@ namespace BankProject.Domain.Models
 {
     public class Admin : User
     {
-        public Admin(int id, string userName, string password, string email)
+        public Admin(int id, string userName, string password, string email )
             : base(id, userName, password, email, "Admin")
         {
         }
 
-
+       
+    
     }
 }
     

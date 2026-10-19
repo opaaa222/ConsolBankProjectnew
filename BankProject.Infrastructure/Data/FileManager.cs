@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using BankProject.Domain.Models; 
+using BankProject.Domain.Models;
+using System.Text.Json.Serialization;
 
 namespace BankProject.Infrastructure.Repositories
 {
@@ -14,7 +15,6 @@ namespace BankProject.Infrastructure.Repositories
             WriteIndented = true
         };
 
-      
         public static void SaveUsersToFile(List<User> users, string filePath)
         {
             try
